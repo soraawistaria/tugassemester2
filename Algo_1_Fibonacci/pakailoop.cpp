@@ -11,7 +11,7 @@ int main(){
     prev1 = 1;
     cout << prev2 << " " << prev1 << " ";
 
-    for(int i = 0; i < 18; i++){
+    for(int i = 0; i < 10; i++){            // 10, 20, 30, 40, 50
         newFibo = prev2 + prev1;
         cout << newFibo << " ";
         prev2 = prev1;
