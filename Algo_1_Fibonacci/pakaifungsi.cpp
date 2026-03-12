@@ -1,20 +1,13 @@
 #include <iostream>
 using namespace std;
 
-void fibonacci(int prev2, int prev1, int &count) {
-    int newFibo;
-    if (count < 10) {
-        newFibo = prev2 + prev1;
-        cout << newFibo << " ";
-        prev2 = prev1;
-        prev1 = newFibo;
-        count += 1;
-        fibonacci(prev2, prev1, count);
+int fibonacci(int n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
 int main() {
-    int count = 2;
-    cout << "0" << " ";
-    cout << "1" << " ";
-    fibonacci(0, 1, count);
+    cout << fibonacci(10);
 }
