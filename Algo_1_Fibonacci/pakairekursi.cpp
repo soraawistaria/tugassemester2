@@ -4,7 +4,7 @@ using namespace std;
 
 void fibonacci(int prev2, int prev1, int &count) {
     int newFibo;
-    if (count < 10) {               // 10, 20, 30, 40, 50
+    if (count < 50) {               // 10, 20, 30, 40, 50
         newFibo = prev2 + prev1;
         cout << newFibo << " ";
         prev2 = prev1;

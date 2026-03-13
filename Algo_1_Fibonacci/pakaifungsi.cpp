@@ -11,7 +11,7 @@ int fibonacci(int n) {
 }
 int main() {
     auto start = chrono::high_resolution_clock::now();
-    cout << fibonacci(10);                          // 10, 20, 30, 40, 50
+    cout << fibonacci(50);                          // 10, 20, 30, 40, 50
 
     auto end = chrono::high_resolution_clock::now();
 
